@@ -1,0 +1,7 @@
+<h1>Organizers</h1>
+<%= link_to "New", new_organizer_path %>
+<% @organizers.each do |organizer| %>
+  <h2><%= organizer.email %></h2>
+  <p>Joined: <%= organizer.created_at %></p>
+  <%= link_to "Show", organizer %>
+<% end %>

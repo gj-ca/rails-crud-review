@@ -1,0 +1,10 @@
+<h1>Organizers#new</h1>
+<p>Find me in app/views/organizers/new.html.erb</p>
+
+<%= form_for @organizer do |form| %>
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+  <%= form.submit %>
+<% end %>
